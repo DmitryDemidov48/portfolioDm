@@ -1,0 +1,65 @@
+/* SubMenuStyles.css */
+
+.submenu-container {
+    position: absolute;
+    top: 80px;
+    right: -100%;
+    width: 250px;
+    background-color: #34495e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.sidebar-link {
+    position: relative;
+    display: flex;
+    color: #e1e9fc;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    list-style: none;
+    height: 60px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s ease;
+    background: linear-gradient(45deg, #73787c, #b6c0bb);
+
+    &:hover {
+        background: linear-gradient(45deg, #595453, #a8a39b);
+        cursor: pointer;
+    }
+}
+
+
+.sidebar-label {
+    margin-left: 16px;
+    color: #ecf0f1;
+}
+
+span {
+    text-decoration: none;
+}
+
+.dropdown-link {
+    background: #34495e;
+    height: 60px;
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+
+    &:hover {
+        background: linear-gradient(90deg, #625d5d 0%, #c2bbb4 100%);
+        cursor: pointer;
+    }
+}
+
+.sidebar-link:hover div > svg,
+.dropdown-link:hover div > svg {
+    transform: translateX(3px); /* Применяем сдвиг вправо при наведении */
+    transition: transform 0.2s ease; /* Добавляем плавность анимации */
+}
