@@ -1,4 +1,4 @@
-// Filename - components/SidebarData.js
+
 
 import React from "react";
 import * as FaIcons from "react-icons/fa";
@@ -14,7 +14,7 @@ export const SidebarData = [
 
     },
     {
-        title: "Services",
+        title: "Applcations",
         path: "/services",
         icon: <IoIcons.IoIosPaper />,
         iconClosed: <RiIcons.RiArrowDownSFill />,
@@ -22,44 +22,55 @@ export const SidebarData = [
 
         subNav: [
             {
-                title: "Service 1",
+                title: "Calcul",
                 path: "/services/services1",
                 icon: <IoIcons.IoIosPaper />,
                 cName: "sub-nav",
             },
             {
-                title: "Service 2",
+                title: "ToDo",
                 path: "/services/services2",
                 icon: <IoIcons.IoIosPaper />,
                 cName: "sub-nav",
             },
             {
-                title: "Service 3",
+                title: "Weather",
                 path: "/services/services3",
                 icon: <IoIcons.IoIosPaper />,
             },
         ],
     },
     {
-        title: "Events",
-        path: "/events",
-        icon: <FaIcons.FaEnvelopeOpenText />,
+        title: "Game",
+        icon: <FaIcons.FaGamepad />,
 
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpened: <RiIcons.RiArrowUpSFill />,
-
         subNav: [
             {
-                title: "Event 1",
-                path: "/events/events1",
+                title: "Multiroom",
+                path: "/game/Multiroom",
+                icon: <IoIcons.IoIosPaper />,
+                cName: "sub-nav",
+            },
+            {
+                title: "Space",
+                path: "/game/space",
+                icon: <IoIcons.IoIosPaper />,
+                cName: "sub-nav",
+            },
+            {
+                title: "Tower",
+                path: "/game/Tower",
                 icon: <IoIcons.IoIosPaper />,
             },
             {
-                title: "Event 2",
-                path: "/events/events2",
+                title: "Cave",
+                path: "/game/Cave",
                 icon: <IoIcons.IoIosPaper />,
             },
         ],
+
     },
     {
         title: "Contact",
@@ -67,9 +78,5 @@ export const SidebarData = [
         icon: <FaIcons.FaPhone />,
     },
 
-    {
-        title: "Support",
-        path: "/support",
-        icon: <IoIcons.IoMdHelpCircle />,
-    },
+
 ];

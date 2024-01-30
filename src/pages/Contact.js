@@ -1,33 +1,29 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import '../styles/ContactForm.css';
+import SocialLinks from "../components/SocialLinks";
 
+const serviceID = process.env.EMAILJS_SERVICE_ID;
+const templateID = process.env.EMAILJS_TEMPLATE_ID;
+const userID = process.env.USER_ID;
 
-const serviceID = process.env.EMAILJS_SERVICE_ID
-const templateID = process.env.EMAILJS_TEMPLATE_ID
-const userID = process.env.USER_ID
 const EmailForm = () => {
     const [errorMessage, setErrorMessage] = useState(null);
 
-    // Инициализация Email.js с User ID
     emailjs.init(userID);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         const btn = document.getElementById('button');
         btn.value = 'Sending...';
 
         try {
             await emailjs.sendForm(serviceID, templateID, e.target);
-
             btn.value = 'Send Email';
             console.log('Email sent successfully');
         } catch (err) {
             btn.value = 'Send Email';
             console.error('Email sending failed:', err);
-
-            // Устанавливаем сообщение об ошибке для отображения пользователю
             setErrorMessage('Failed to send email. Please try again.');
         }
     };
@@ -54,6 +50,7 @@ const EmailForm = () => {
                 </div>
                 <input type="submit" id="button" value="Send Email" />
             </form>
+            <SocialLinks/>
         </div>
     );
 };

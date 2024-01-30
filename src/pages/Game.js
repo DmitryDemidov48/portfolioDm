@@ -5,7 +5,7 @@ import IframeComponentsTower from "../components/game/IframeComponentsTower";
 import IframeComponentsCave from "../components/game/IframeComponentsCave";
 
 
-export const EventsOne = () => {
+export const Space = () => {
     return (
         <div className="services">
             <IframeComponentSpace/>
@@ -13,7 +13,7 @@ export const EventsOne = () => {
         </div>
     );
 };
-export const EventsTwo = () => {
+export const Multiroom = () => {
     return (
         <div className="services">
             <IframeComponentMultiroom/>
@@ -22,7 +22,7 @@ export const EventsTwo = () => {
     );
 };
 
-export const EventsThree = () => {
+export const Tower = () => {
     return (
         <div className="services">
             <IframeComponentsTower/>
@@ -30,7 +30,7 @@ export const EventsThree = () => {
     );
 };
 
-export const EventsFour = () => {
+export const Cave = () => {
     return (
         <div className="services">
             <IframeComponentsCave/>

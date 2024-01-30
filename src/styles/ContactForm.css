@@ -52,3 +52,30 @@ input[type="submit"]:hover {
     padding: 12px;
     margin-bottom: 20px;
 }
+
+/* Добавляем стили для ссылок */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px; /* Увеличиваем отступ сверху */
+}
+
+.social-links a {
+    text-decoration: none;
+    color: black; /* Черный цвет текста */
+    font-size: 16px;
+    margin: 0 10px; /* Увеличиваем отступы */
+    transition: transform 0.2s ease; /* Анимация при наведении */
+    display: flex;
+    align-items: center; /* Выравниваем по вертикали */
+}
+
+.social-links a svg {
+    width: 24px; /* Задаем одинаковую ширину для иконок */
+    height: 24px; /* Задаем одинаковую высоту для иконок */
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+    transform: scale(1.1); /* Увеличиваем размер при наведении */
+}

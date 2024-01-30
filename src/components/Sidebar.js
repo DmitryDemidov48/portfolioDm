@@ -35,7 +35,7 @@ const Sidebar = () => {
                     <Link to="#" className="NavIcon" onClick={showSidebar}>
                         <FaIcons.FaBars />
                     </Link>
-                    <h1 className="HeaderTitle">Дмитрий Демидов</h1>
+                    <h1 className="HeaderTitle">Project Portfolio</h1>
                 </div>
                 <nav className={`SidebarNav ${sidebar ? "open" : ""}`} >
                     <div className="SidebarWrap">

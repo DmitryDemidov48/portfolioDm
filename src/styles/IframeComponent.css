@@ -1,0 +1,29 @@
+
+.map {
+    width: 1280px;
+    height: 780px;
+    border: none;
+}
+.video-frame {
+    position: relative;
+    overflow: hidden;
+    border: 5px solid #000;
+    border-radius: 5px;
+}
+
+.slider-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    height: 100%;
+}
+
+.iframe {
+    width: 1024px;
+    height: 640px;
+    border: none;
+}
+
+
+
+
