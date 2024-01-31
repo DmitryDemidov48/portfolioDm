@@ -1,7 +1,7 @@
 {
   "name": "portfoliodm",
   "version": "0.1.0",
-  "homepage": "https://github.com/DmitryDemidov48/portfoliodm.git",
+  "homepage": "https://dmitrydemidov48.github.io/portfoliodm",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
