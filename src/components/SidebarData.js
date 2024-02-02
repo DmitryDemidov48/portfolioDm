@@ -26,7 +26,7 @@ export const SidebarData = [
 
         subNav: [
             {
-                title: "Calcul",
+                title: "Сalculator",
                 path: "/services/services1",
                 icon: <LuCalculator />,
                 cName: "sub-nav",
@@ -47,7 +47,7 @@ export const SidebarData = [
     {
         title: "Game",
         icon: <FaIcons.FaGamepad />,
-
+        path: "/game",
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpened: <RiIcons.RiArrowUpSFill />,
         subNav: [

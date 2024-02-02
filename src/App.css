@@ -1,22 +1,33 @@
 @import "../node_modules/normalize.css";
 
-
-
+/* Общие стили для всех устройств */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.home,
-.services,
-.reports,
-.contact,
-.events,
-.support {
-    display: flex;
-    margin-left: 260px;
-    font-size: 2rem;
+
+/* Стили для десктопной версии */
+@media screen and (min-width: 1024px) {
+    .home,
+    .services,
+    .reports,
+    .contact,
+    .events,
+    .support {
+        display: flex;
+        margin-left: 260px;
+        font-size: 2rem;
+    }
 }
+/* Отключение мобильной версии */
+@media screen and (max-width: 767px) {
+    .mobile-hide {
+        display: none;
+    }
+}
+
+/* Стили для ссылок */
 a {
     text-decoration: none;
 }

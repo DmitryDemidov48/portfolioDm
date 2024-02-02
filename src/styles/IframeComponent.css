@@ -31,28 +31,35 @@
     .container {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end; /* Выравниваем контент внизу */
-        align-items: center; /* Центрируем контент по горизонтали */
-        height: 100vh; /* Высота контейнера равна высоте экрана */
-        position: relative; /* Установка позиционирования для абсолютно позиционированных элементов */
+        justify-content: flex-end;
+        align-items: center;
+        height: auto;
+        position: relative;
     }
 
     .map {
-        width: 100%; /* Ширина карты занимает всю доступную ширину */
-        height: 480px; /* Уменьшаем высоту карты */
+        width: 100vw; /* Занимает всю ширину экрана */
+        height: 100vh; /* Занимает всю высоту экрана */
     }
 
     .video-frame {
-        border: 3px solid #000; /* Уменьшаем толщину рамки */
-        border-radius: 3px; /* Уменьшаем радиус скругления углов */
+        border: 3px solid #000;
+        border-radius: 3px;
+        width: 100vw; /* Занимает всю ширину экрана */
+        height: 50vh; /* Занимает всю высоту экрана */
     }
 
-    .slider-container {
-        height: auto; /* Высота контейнера подстраивается под содержимое */
-    }
+
 
     .iframe {
-        width: 100%; /* Ширина iframe занимает всю доступную ширину */
-        height: auto; /* Высота iframe подстраивается под содержимое */
+        width: 100vw; /* Занимает всю ширину экрана */
+        height: 50vh;
+    }
+}
+/* Медиа-запрос для устройств с шириной экрана до 768px */
+@media screen and (max-width: 1024px) {
+    .submenu-container {
+        display: none;
+
     }
 }

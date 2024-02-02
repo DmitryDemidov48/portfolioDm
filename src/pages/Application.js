@@ -7,6 +7,17 @@ import IframeComponentWeather from "../components/applications/IframeComponentWe
 
 
 
+export const Application = () => {
+    return (
+        <div className="container-services">
+            <IframeComponentCalcul/>
+           <IframeComponentToDo/>
+           <IframeComponentWeather/>
+        </div>
+    );
+};
+
+
 export const Calcul = () => {
     return (
         <div className="services">
@@ -18,7 +29,7 @@ export const Calcul = () => {
 export const ToDo = () => {
     return (
         <div className="services">
-           <IframeComponentToDo/>
+            <IframeComponentToDo/>
         </div>
     );
 };
