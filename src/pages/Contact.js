@@ -33,19 +33,19 @@ const EmailForm = () => {
             {errorMessage && <div className="error-message">{errorMessage}</div>}
             <form id="contact-form" className="email-form" onSubmit={handleSubmit}>
                 <div className="field">
-                    <label htmlFor="to_name">To Name</label>
+                    <label htmlFor="to_name">Имя</label>
                     <input type="text" name="to_name" id="to_name" />
                 </div>
                 <div className="field">
-                    <label htmlFor="from_name">From Name</label>
+                    <label htmlFor="from_name">Фамилия</label>
                     <input type="text" name="from_name" id="from_name" />
                 </div>
                 <div className="field">
-                    <label htmlFor="message">Message</label>
+                    <label htmlFor="message">Сообщение</label>
                     <input type="text" name="message" id="message" />
                 </div>
                 <div className="field">
-                    <label htmlFor="reply_to">Reply To</label>
+                    <label htmlFor="reply_to">Почта</label>
                     <input type="text" name="reply_to" id="reply_to" />
                 </div>
                 <input type="submit" id="button" value="Send Email" />

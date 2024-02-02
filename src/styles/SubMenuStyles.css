@@ -1,4 +1,4 @@
-/* SubMenuStyles.css */
+
 
 .submenu-container {
     position: absolute;
@@ -57,6 +57,19 @@ span {
         cursor: pointer;
     }
 }
+/* Медиа-запрос для устройств с шириной экрана до 768px */
+@media screen and (max-width: 768px) {
+  .submenu-container {
+    position: absolute;
+    top: 80px;
+    right: -100.5%;
+    width: 377px;
+    background-color: #34495e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+}
+
 
 .sidebar-link:hover div > svg,
 .dropdown-link:hover div > svg {

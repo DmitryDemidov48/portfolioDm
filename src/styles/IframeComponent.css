@@ -1,9 +1,11 @@
-
+/* Общие стили для всех размеров экрана */
 .map {
+    top: 40px;
     width: 1280px;
     height: 780px;
     border: none;
 }
+
 .video-frame {
     position: relative;
     overflow: hidden;
@@ -24,6 +26,33 @@
     border: none;
 }
 
+/* Медиа-запрос для устройств с шириной экрана до 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* Выравниваем контент внизу */
+        align-items: center; /* Центрируем контент по горизонтали */
+        height: 100vh; /* Высота контейнера равна высоте экрана */
+        position: relative; /* Установка позиционирования для абсолютно позиционированных элементов */
+    }
 
+    .map {
+        width: 100%; /* Ширина карты занимает всю доступную ширину */
+        height: 480px; /* Уменьшаем высоту карты */
+    }
 
+    .video-frame {
+        border: 3px solid #000; /* Уменьшаем толщину рамки */
+        border-radius: 3px; /* Уменьшаем радиус скругления углов */
+    }
 
+    .slider-container {
+        height: auto; /* Высота контейнера подстраивается под содержимое */
+    }
+
+    .iframe {
+        width: 100%; /* Ширина iframe занимает всю доступную ширину */
+        height: auto; /* Высота iframe подстраивается под содержимое */
+    }
+}

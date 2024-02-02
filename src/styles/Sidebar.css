@@ -39,12 +39,15 @@
     transition: left 350ms ease-in-out;
     z-index: 10;
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); /* Тень для объема */
-
 }
 
 .SidebarNav.open {
     left: 0;
 }
+
+
+
+
 
 .SidebarWrap {
     width: 100%;
