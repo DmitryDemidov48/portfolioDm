@@ -92,11 +92,19 @@
         width: 100%; /* Занимает всю ширину экрана */
         height: 100%;
     }
+
+
 }
 /* Медиа-запрос для устройств с шириной экрана до 768px */
 @media screen and (max-width: 1024px) {
     .submenu-container {
         display: none;
 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-services {
+        text-align: center;
     }
 }

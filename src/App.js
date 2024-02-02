@@ -3,7 +3,7 @@ import Sidebar from "./components/Sidebar";
 import {BrowserRouter as Router, Routes, Route,} from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
 import {Application, Calcul, ToDo, Weather,} from "./pages/Application";
-import {Cave,Multiroom, Space, Tower} from "./pages/Game";
+import {Cave, Game, Multiroom, Space, Tower} from "./pages/Game";
 import Contact from "./pages/Contact";
 
 
@@ -26,6 +26,8 @@ function App() {
                     element={<ToDo/>}/>
                 <Route path="/services/services3"
                     element={<Weather/>}/>
+                <Route path="/game"
+                       element={<Game/>}/>
                 <Route path="/game/space"
                        element={<Space/>}/>
                 <Route path="/game/Multiroom"

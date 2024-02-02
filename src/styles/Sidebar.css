@@ -56,7 +56,7 @@
 /* Media Query для экранов шириной менее 600px (мобильные телефоны) */
 @media only screen and (max-width: 600px) {
     .HeaderTitle {
-        margin-left: 0;
+        margin-left: 50px;
     }
 
     .SidebarNav {
