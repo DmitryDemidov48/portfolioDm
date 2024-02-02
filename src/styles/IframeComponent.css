@@ -6,12 +6,15 @@
     border: none;
 }
 
-.video-frame {
-    position: relative;
-    overflow: hidden;
-    border: 5px solid #000;
-    border-radius: 5px;
-}
+    .video-frame,
+    .calc-frame,
+    .todo-frame,
+    .weather-frame{
+        position: relative;
+        overflow: hidden;
+        border: 5px solid #000;
+        border-radius: 5px;
+    }
 
 .slider-container {
     display: flex;
@@ -20,11 +23,15 @@
     height: 100%;
 }
 
-.iframe {
-    width: 1024px;
-    height: 640px;
-    border: none;
-}
+    .iframe,
+    .iframe-calc,
+    .iframe_todo,
+    .iframe-weather {
+        width: 1024px;
+        height: 640px;
+        border: none;
+    }
+
 
 /* Медиа-запрос для устройств с шириной экрана до 768px */
 @media screen and (max-width: 768px) {
@@ -35,6 +42,7 @@
         align-items: center;
         height: auto;
         position: relative;
+
     }
 
     .map {
@@ -42,18 +50,47 @@
         height: 100vh; /* Занимает всю высоту экрана */
     }
 
-    .video-frame {
+    .calc-frame {
+        position: relative;
         border: 3px solid #000;
         border-radius: 3px;
         width: 100vw; /* Занимает всю ширину экрана */
-        height: 50vh; /* Занимает всю высоту экрана */
+        height: 65vh; /* Занимает всю высоту экрана */
+
     }
 
-
-
-    .iframe {
+    .iframe-calc {
+        position: absolute;
         width: 100vw; /* Занимает всю ширину экрана */
-        height: 50vh;
+        height: 65vh;
+
+    }
+
+    .todo-frame {
+        position: relative;
+        border: 3px solid #000;
+        border-radius: 3px;
+        width: 100vw; /* Занимает всю ширину экрана */
+        height: 100vh; /* Занимает всю высоту экрана */
+    }
+
+    .iframe_todo {
+        position: absolute;
+        width: 100vw; /* Занимает всю ширину экрана */
+        height: 100%;
+    }
+
+    .weather-frame {
+        position: relative;
+        border: 3px solid #000;
+        border-radius: 3px;
+        width: 100vw; /* Занимает всю ширину экрана */
+        height: 100vh; /* Занимает всю высоту экрана */
+    }
+    .iframe-weather {
+        position: absolute;
+        width: 100%; /* Занимает всю ширину экрана */
+        height: 100%;
     }
 }
 /* Медиа-запрос для устройств с шириной экрана до 768px */

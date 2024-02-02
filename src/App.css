@@ -7,8 +7,7 @@
     padding: 0;
 }
 
-/* Стили для десктопной версии */
-@media screen and (min-width: 1024px) {
+
     .home,
     .services,
     .reports,
@@ -19,13 +18,8 @@
         margin-left: 260px;
         font-size: 2rem;
     }
-}
-/* Отключение мобильной версии */
-@media screen and (max-width: 767px) {
-    .mobile-hide {
-        display: none;
-    }
-}
+
+
 
 /* Стили для ссылок */
 a {
