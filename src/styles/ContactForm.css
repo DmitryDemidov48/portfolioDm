@@ -1,8 +1,7 @@
-/* EmailForm.css */
 
 .email-form {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 30px auto 0;
     padding: 20px;
     background-color: #f8f9fa;
     border: 1px solid #dee2e6;

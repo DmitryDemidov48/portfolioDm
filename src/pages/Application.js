@@ -1,5 +1,3 @@
-// Filename - pages/Services.js
-
 import React from "react";
 import IframeComponentCalcul from "../components/applications/IframeComponentCalcul";
 import IframeComponentToDo from "../components/applications/IframeComponentToDo";
