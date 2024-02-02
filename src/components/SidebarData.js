@@ -5,6 +5,10 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
 import * as RiIcons from "react-icons/ri";
+import { MdOutlineGames } from "react-icons/md";
+import { LuCalculator } from "react-icons/lu";
+import { LuListTodo } from "react-icons/lu";
+import { TiWeatherCloudy } from "react-icons/ti";
 
 export const SidebarData = [
     {
@@ -24,19 +28,19 @@ export const SidebarData = [
             {
                 title: "Calcul",
                 path: "/services/services1",
-                icon: <IoIcons.IoIosPaper />,
+                icon: <LuCalculator />,
                 cName: "sub-nav",
             },
             {
                 title: "ToDo",
                 path: "/services/services2",
-                icon: <IoIcons.IoIosPaper />,
+                icon: <LuListTodo />,
                 cName: "sub-nav",
             },
             {
                 title: "Weather",
                 path: "/services/services3",
-                icon: <IoIcons.IoIosPaper />,
+                icon: <TiWeatherCloudy />,
             },
         ],
     },
@@ -50,24 +54,24 @@ export const SidebarData = [
             {
                 title: "Multiroom",
                 path: "/game/Multiroom",
-                icon: <IoIcons.IoIosPaper />,
+                icon: <MdOutlineGames />,
                 cName: "sub-nav",
             },
             {
                 title: "Space",
                 path: "/game/space",
-                icon: <IoIcons.IoIosPaper />,
+                icon: <MdOutlineGames />,
                 cName: "sub-nav",
             },
             {
                 title: "Tower",
                 path: "/game/Tower",
-                icon: <IoIcons.IoIosPaper />,
+                icon: <MdOutlineGames />,
             },
             {
                 title: "Cave",
                 path: "/game/Cave",
-                icon: <IoIcons.IoIosPaper />,
+                icon: <MdOutlineGames />,
             },
         ],
 
