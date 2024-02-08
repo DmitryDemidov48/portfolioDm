@@ -40,6 +40,7 @@ const Sidebar = () => {
                         <FaIcons.FaBars />
                     </Link>
                     <h1 className="HeaderTitle">Project Portfolio</h1>
+
                 </div>
                 <nav className={`SidebarNav ${sidebar ? "open" : ""}`} >
                     <div className="SidebarWrap">

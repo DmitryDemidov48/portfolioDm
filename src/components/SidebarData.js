@@ -7,11 +7,12 @@ import { MdOutlineGames } from "react-icons/md";
 import { LuCalculator } from "react-icons/lu";
 import { LuListTodo } from "react-icons/lu";
 import { TiWeatherCloudy } from "react-icons/ti";
+import { MdOutlineShortText } from "react-icons/md"
 
 export const SidebarData = [
     {
         title: "About Us",
-        path: "/about-us",
+        path: "/",
         icon: <AiIcons.AiFillHome />,
 
     },
@@ -43,7 +44,7 @@ export const SidebarData = [
             {
                 title: "LinkShort",
                 path: "/services/services4",
-                icon: <TiWeatherCloudy />,
+                icon: <MdOutlineShortText />,
             },
 
         ],

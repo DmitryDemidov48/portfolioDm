@@ -1,9 +1,6 @@
-
-
-
-    import React from 'react';
+import React from 'react';
 import '../../styles/IframeComponent.css';
-export const IframeComponentLinkShort = () => {
+ const IframeComponentLinkShort = () => {
     return (
         <div className="weather-frame">
             <div className="slider-container">
@@ -18,4 +15,4 @@ export const IframeComponentLinkShort = () => {
         </div>
     );
 };
-
+ export default IframeComponentLinkShort

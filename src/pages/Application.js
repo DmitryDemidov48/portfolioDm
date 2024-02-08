@@ -2,7 +2,7 @@ import React from "react";
 import IframeComponentCalcul from "../components/applications/IframeComponentCalcul";
 import IframeComponentToDo from "../components/applications/IframeComponentToDo";
 import IframeComponentWeather from "../components/applications/IframeComponentWeather";
-import {IframeComponentLinkShort} from "../components/applications/IframeComponentLinkShort";
+import IframeComponentLinkShort from "../components/applications/IframeComponentLinkShort";
 
 
 

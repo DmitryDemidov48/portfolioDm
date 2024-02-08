@@ -16,8 +16,8 @@ function App() {
         <Router>
             <Sidebar/>
             <Routes>
-                <Route path="/" element={<Navigate to="/about-us" />} />
-                <Route path="/about-us"
+
+                <Route path="/"
                     element={<AboutUs/>}/>
                 <Route path="/services"
                        element={<Application/>}/>
@@ -27,7 +27,7 @@ function App() {
                     element={<ToDo/>}/>
                 <Route path="/services/services3"
                     element={<Weather/>}/>
-                <Route path='/serveces/services4'
+                <Route path="/services/services4"
                        element={<LinkShort/>}/>
                 <Route path="/game"
                        element={<Game/>}/>
