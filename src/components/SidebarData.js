@@ -40,6 +40,12 @@ export const SidebarData = [
                 path: "/services/services3",
                 icon: <TiWeatherCloudy />,
             },
+            {
+                title: "LinkShort",
+                path: "/services/services4",
+                icon: <TiWeatherCloudy />,
+            },
+
         ],
     },
     {

@@ -1,8 +1,8 @@
 import "./App.css";
 import Sidebar from "./components/Sidebar";
-import {BrowserRouter as Router, Routes, Route,} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, Navigate,} from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
-import {Application, Calcul, ToDo, Weather,} from "./pages/Application";
+import {Application, Calcul, LinkShort, ToDo, Weather,} from "./pages/Application";
 import {Cave, Game, Multiroom, Space, Tower} from "./pages/Game";
 import Contact from "./pages/Contact";
 
@@ -16,6 +16,7 @@ function App() {
         <Router>
             <Sidebar/>
             <Routes>
+                <Route path="/" element={<Navigate to="/about-us" />} />
                 <Route path="/about-us"
                     element={<AboutUs/>}/>
                 <Route path="/services"
@@ -26,6 +27,8 @@ function App() {
                     element={<ToDo/>}/>
                 <Route path="/services/services3"
                     element={<Weather/>}/>
+                <Route path='/serveces/services4'
+                       element={<LinkShort/>}/>
                 <Route path="/game"
                        element={<Game/>}/>
                 <Route path="/game/space"

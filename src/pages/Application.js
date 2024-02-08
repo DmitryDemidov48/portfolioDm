@@ -2,6 +2,7 @@ import React from "react";
 import IframeComponentCalcul from "../components/applications/IframeComponentCalcul";
 import IframeComponentToDo from "../components/applications/IframeComponentToDo";
 import IframeComponentWeather from "../components/applications/IframeComponentWeather";
+import {IframeComponentLinkShort} from "../components/applications/IframeComponentLinkShort";
 
 
 
@@ -39,3 +40,11 @@ export const Weather = () => {
         </div>
     );
 };
+
+export const LinkShort = () => {
+    return (
+        <div className="services">
+            <IframeComponentLinkShort/>
+        </div>
+    );
+}
