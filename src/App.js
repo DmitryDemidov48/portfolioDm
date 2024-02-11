@@ -1,10 +1,11 @@
 import "./App.css";
 import Sidebar from "./components/Sidebar";
-import {BrowserRouter as Router, Routes, Route, Navigate,} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, } from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
-import {Application, Calcul, LinkShort, ToDo, Weather,} from "./pages/Application";
+import {Application, Calcul, LinkShort, SecretRecording, ToDo, Weather,} from "./pages/Application";
 import {Cave, Game, Multiroom, Space, Tower} from "./pages/Game";
 import Contact from "./pages/Contact";
+
 
 
 
@@ -17,18 +18,20 @@ function App() {
             <Sidebar/>
             <Routes>
 
-                <Route path="/"
+                <Route path="/portfoliodm"
                     element={<AboutUs/>}/>
                 <Route path="/services"
                        element={<Application/>}/>
-                <Route path="/services/services1"
+                <Route path="/services1"
                     element={<Calcul/>}/>
-                <Route path="/services/services2"
+                <Route path="/services2"
                     element={<ToDo/>}/>
-                <Route path="/services/services3"
+                <Route path="/services3"
                     element={<Weather/>}/>
-                <Route path="/services/services4"
+                <Route path="/services4"
                        element={<LinkShort/>}/>
+                <Route path="/services5"
+                       element={<SecretRecording/>}/>
                 <Route path="/game"
                        element={<Game/>}/>
                 <Route path="/game/space"

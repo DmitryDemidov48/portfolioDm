@@ -11,8 +11,8 @@ import { MdOutlineShortText } from "react-icons/md"
 
 export const SidebarData = [
     {
-        title: "About Us",
-        path: "/",
+        title: "About Me",
+        path: "/portfoliodm",
         icon: <AiIcons.AiFillHome />,
 
     },
@@ -26,26 +26,33 @@ export const SidebarData = [
         subNav: [
             {
                 title: "Сalculator",
-                path: "/services/services1",
+                path: "/services1",
                 icon: <LuCalculator />,
                 cName: "sub-nav",
             },
             {
                 title: "ToDo",
-                path: "/services/services2",
+                path: "/services2",
                 icon: <LuListTodo />,
                 cName: "sub-nav",
             },
             {
                 title: "Weather",
-                path: "/services/services3",
+                path: "/services3",
                 icon: <TiWeatherCloudy />,
             },
             {
                 title: "LinkShort",
-                path: "/services/services4",
+                path: "/services4",
                 icon: <MdOutlineShortText />,
             },
+            {
+                title: "SecretRecording",
+                path: "/services5",
+                icon: <MdOutlineShortText />,
+            },
+
+
 
         ],
     },

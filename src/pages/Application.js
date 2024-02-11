@@ -3,6 +3,7 @@ import IframeComponentCalcul from "../components/applications/IframeComponentCal
 import IframeComponentToDo from "../components/applications/IframeComponentToDo";
 import IframeComponentWeather from "../components/applications/IframeComponentWeather";
 import IframeComponentLinkShort from "../components/applications/IframeComponentLinkShort";
+import IframeSecretRecording from "../components/applications/iframeSecretRecording";
 
 
 
@@ -12,6 +13,8 @@ export const Application = () => {
             <IframeComponentCalcul/>
            <IframeComponentToDo/>
            <IframeComponentWeather/>
+            <IframeComponentLinkShort/>
+            <IframeSecretRecording/>
         </div>
     );
 };
@@ -45,6 +48,15 @@ export const LinkShort = () => {
     return (
         <div className="services">
             <IframeComponentLinkShort/>
+        </div>
+    );
+}
+
+
+export const SecretRecording = () => {
+    return (
+        <div className="services">
+            <IframeSecretRecording/>
         </div>
     );
 }

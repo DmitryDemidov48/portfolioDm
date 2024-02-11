@@ -6,15 +6,15 @@
     border: none;
 }
 
-    .video-frame,
-    .calc-frame,
-    .todo-frame,
-    .weather-frame{
-        position: relative;
-        overflow: hidden;
-        border: 5px solid #000;
-        border-radius: 5px;
-    }
+.video-frame,
+.calc-frame,
+.todo-frame,
+.weather-frame {
+    position: relative;
+    overflow: hidden;
+    border: 5px solid #000;
+    border-radius: 5px;
+}
 
 .slider-container {
     display: flex;
@@ -23,15 +23,14 @@
     height: 100%;
 }
 
-    .iframe,
-    .iframe-calc,
-    .iframe_todo,
-    .iframe-weather {
-        width: 1024px;
-        height: 640px;
-        border: none;
-    }
-
+.iframe,
+.iframe-calc,
+.iframe_todo,
+.iframe-weather {
+    width: 1024px;
+    height: 640px;
+    border: none;
+}
 
 /* Медиа-запрос для устройств с шириной экрана до 768px */
 @media screen and (max-width: 768px) {
@@ -42,69 +41,44 @@
         align-items: center;
         height: auto;
         position: relative;
-
     }
 
-    .map {
-        width: 100vw; /* Занимает всю ширину экрана */
-        height: 100vh; /* Занимает всю высоту экрана */
+    .map,
+    .calc-frame,
+    .todo-frame,
+    .weather-frame {
+        width: 100vw;
+        height: 100vh;
     }
 
     .calc-frame {
-        position: relative;
-        border: 3px solid #000;
-        border-radius: 3px;
-        width: 100vw; /* Занимает всю ширину экрана */
-        height: 65vh; /* Занимает всю высоту экрана */
-
+        height: 65vh;
     }
 
-    .iframe-calc {
+    .iframe-calc,
+    .iframe_todo,
+    .iframe-weather {
         position: absolute;
-        width: 100vw; /* Занимает всю ширину экрана */
-        height: 65vh;
-
+        width: 100vw;
+        height: 100%;
     }
 
     .todo-frame {
-        position: relative;
-        border: 3px solid #000;
-        border-radius: 3px;
-        width: 100vw; /* Занимает всю ширину экрана */
-        height: 100vh; /* Занимает всю высоту экрана */
+        height: 100vh;
     }
 
-    .iframe_todo {
-        position: absolute;
-        width: 100vw; /* Занимает всю ширину экрана */
-        height: 100%;
-    }
-
-    .weather-frame {
-        position: relative;
-        border: 3px solid #000;
-        border-radius: 3px;
-        width: 100vw; /* Занимает всю ширину экрана */
-        height: 100vh; /* Занимает всю высоту экрана */
-    }
-    .iframe-weather {
-        position: absolute;
-        width: 100%; /* Занимает всю ширину экрана */
-        height: 100%;
-    }
-
-
-}
-/* Медиа-запрос для устройств с шириной экрана до 768px */
-@media screen and (max-width: 1024px) {
     .submenu-container {
         display: none;
+    }
 
+    .container-services {
+        text-align: center;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .container-services {
-        text-align: center;
+/* Медиа-запрос для устройств с шириной экрана до 1024px */
+@media screen and (max-width: 1024px) {
+    .submenu-container {
+
     }
 }

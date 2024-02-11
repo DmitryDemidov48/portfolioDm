@@ -39,7 +39,7 @@ span {
 }
 
 .dropdown-link {
-    background: #34495e;
+    background:#191d21;
     height: 60px;
     padding-left: 3rem;
     display: flex;
@@ -69,6 +69,7 @@ span {
 
     }
 }
+
 
 
 

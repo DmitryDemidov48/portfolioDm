@@ -1,6 +1,7 @@
+
 /* Общие стили для больших экранов */
 .Nav {
-    background: #2c3e50; /* Цвет фона */
+    background: #191d21; /* Уникальный цвет фона */
     height: 80px;
     display: flex;
     justify-content: flex-start;
@@ -11,8 +12,11 @@
 .HeaderTitle {
     display: block;
     text-align: center;
-    margin-left: 500px;
-    color: #ecf0f1; /* Цвет заголовка */
+    margin-left: auto; /* Помещаем заголовок в центр */
+    margin-right: auto; /* Помещаем заголовок в центр */
+    color: #ffffff; /* Цвет заголовка */
+    font-size: 24px; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
 }
 
 .NavIcon {
@@ -22,11 +26,11 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: #ecf0f1; /* Цвет иконки */
+    color: #ffffff; /* Цвет иконки */
 }
 
 .SidebarNav {
-    background: #34495e; /* Цвет фона бокового меню */
+    background: #25272a; /* Уникальный цвет фона бокового меню */
     width: 250px;
     height: 100vh;
     display: flex;
@@ -42,10 +46,6 @@
 .SidebarNav.open {
     left: 0;
 }
-
-
-
-
 
 .SidebarWrap {
     width: 100%;
