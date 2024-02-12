@@ -36,6 +36,7 @@ export const SidebarData = [
                 icon: <LuListTodo />,
                 cName: "sub-nav",
             },
+
             {
                 title: "Weather",
                 path: "/services3",
@@ -50,6 +51,11 @@ export const SidebarData = [
                 title: "SecretRecording",
                 path: "/services5",
                 icon: <MdOutlineShortText />,
+            },
+            {
+                title: "Table",
+                path: "/services5",
+                icon: <TiWeatherCloudy />,
             },
 
 

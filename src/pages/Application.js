@@ -4,6 +4,8 @@ import IframeComponentToDo from "../components/applications/IframeComponentToDo"
 import IframeComponentWeather from "../components/applications/IframeComponentWeather";
 import IframeComponentLinkShort from "../components/applications/IframeComponentLinkShort";
 import IframeSecretRecording from "../components/applications/iframeSecretRecording";
+import {findAllByDisplayValue} from "@testing-library/react";
+import IframeComponentTable from "../components/applications/iframeComponentTable";
 
 
 
@@ -11,6 +13,7 @@ export const Application = () => {
     return (
         <div className="container-services">
             <IframeComponentCalcul/>
+            <IframeComponentTable/>
            <IframeComponentToDo/>
            <IframeComponentWeather/>
             <IframeComponentLinkShort/>
@@ -36,6 +39,13 @@ export const ToDo = () => {
     );
 };
 
+export const Table  = () => {
+    return (
+        <div className="services">
+            <IframeComponentTable/>
+        </div>
+    )
+}
 export const Weather = () => {
     return (
         <div className="services">
