@@ -9,7 +9,7 @@ import IframeComponentsCave from "../components/game/IframeComponentsCave";
 export const Game = () => {
     return (
         <div className="container-services">
-           <h1>"Пожалуйста, переключитесь на десктопную версию сайта.</h1>
+           <h1>Пожалуйста, переключитесь на десктопную версию сайта.</h1>
         </div>
     );
 };
