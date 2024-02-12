@@ -8,6 +8,7 @@ import { LuCalculator } from "react-icons/lu";
 import { LuListTodo } from "react-icons/lu";
 import { TiWeatherCloudy } from "react-icons/ti";
 import { MdOutlineShortText } from "react-icons/md"
+import { CiViewTable } from "react-icons/ci";
 
 export const SidebarData = [
     {
@@ -55,7 +56,7 @@ export const SidebarData = [
             {
                 title: "Table",
                 path: "/services5",
-                icon: <TiWeatherCloudy />,
+                icon: <CiViewTable />,
             },
 
 
