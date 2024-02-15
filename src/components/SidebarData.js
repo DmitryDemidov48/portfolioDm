@@ -63,7 +63,7 @@ export const SidebarData = [
 
         ],
     },
-    {
+    /*{
         title: "Game",
         icon: <FaIcons.FaGamepad />,
         path: "/game",
@@ -94,7 +94,7 @@ export const SidebarData = [
             },
         ],
 
-    },
+    },*/
     {
         title: "Contact",
         path: "/contact",
