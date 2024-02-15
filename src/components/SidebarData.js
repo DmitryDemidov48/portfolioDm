@@ -55,7 +55,7 @@ export const SidebarData = [
             },
             {
                 title: "Table",
-                path: "/services5",
+                path: "/services6",
                 icon: <CiViewTable />,
             },
 
