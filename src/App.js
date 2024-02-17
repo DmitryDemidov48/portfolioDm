@@ -20,6 +20,8 @@ function App() {
 
                 <Route path="/portfoliodm"
                     element={<AboutMe/>}/>
+                <Route path="/contact"
+                       element={<Contact/>}/>
                 <Route path="/services"
                        element={<Application/>}/>
                 <Route path="/services1"

@@ -1,12 +1,4 @@
-.submenu-container {
-    position: absolute;
-    top: 80px;
-    right: -100%;
-    width: 250px;
-    background-color: #34495e;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-}
 
 .sidebar-link {
     position: relative;
@@ -20,13 +12,15 @@
     text-decoration: none;
     font-size: 18px;
     transition: background 0.3s ease;
-    background: linear-gradient(45deg, #73787c, #b6c0bb);
+
+
 
     &:hover {
-        background: linear-gradient(45deg, #595453, #a8a39b);
+        background: linear-gradient(45deg, #213e49, #23a786);
         cursor: pointer;
     }
 }
+
 
 
 .sidebar-label {
@@ -39,7 +33,6 @@ span {
 }
 
 .dropdown-link {
-    background:#191d21;
     height: 60px;
     padding-left: 3rem;
     display: flex;
@@ -47,20 +40,26 @@ span {
     text-decoration: none;
     color: #ecf0f1;
     font-size: 18px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease;
 
     &:hover {
-        background: linear-gradient(90deg, #625d5d 0%, #c2bbb4 100%);
+        background: linear-gradient(90deg, #34637e 0%, #3cd3ad 100%);
         cursor: pointer;
     }
 }
-/* Медиа-запрос для устройств с шириной экрана до 768px */
+@media screen and (max-width: 768px) {
+    .sidebar-link {
+        justify-content: center;
+        padding-left: 0;
+    }
+}
+
 @media screen and (max-width: 1024px) {
   .submenu-container {
    display: none;
 
 }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -75,6 +74,6 @@ span {
 
 .sidebar-link:hover div > svg,
 .dropdown-link:hover div > svg {
-    transform: translateX(3px); /* Применяем сдвиг вправо при наведении */
-    transition: transform 0.2s ease; /* Добавляем плавность анимации */
+    transform: translateX(3px);
+    transition: transform 0.2s ease;
 }

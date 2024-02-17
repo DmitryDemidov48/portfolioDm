@@ -1,4 +1,4 @@
-/* Общие стили для всех размеров экрана */
+
 .map {
     top: 40px;
     width: 1280px;
@@ -32,7 +32,7 @@
     border: none;
 }
 
-/* Медиа-запрос для устройств с шириной экрана до 768px */
+
 @media screen and (max-width: 768px) {
     .container {
         display: flex;
@@ -76,7 +76,7 @@
     }
 }
 
-/* Медиа-запрос для устройств с шириной экрана до 1024px */
+
 @media screen and (max-width: 1024px) {
     .submenu-container {
 

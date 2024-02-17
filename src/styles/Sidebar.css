@@ -1,22 +1,35 @@
 
-/* Общие стили для больших экранов */
 .Nav {
-    background: #191d21; /* Уникальный цвет фона */
-    height: 80px;
+    z-index: -1;
+    height: 200px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Тень для объема */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 60% 20%;
+    background: linear-gradient(to right, #4cb8c4, #3cd3ad, #77bd77, #83a8c4);
 }
 
 .HeaderTitle {
     display: block;
     text-align: center;
-    margin-left: auto; /* Помещаем заголовок в центр */
-    margin-right: auto; /* Помещаем заголовок в центр */
-    color: #ffffff; /* Цвет заголовка */
-    font-size: 24px; /* Размер шрифта */
-    font-weight: bold; /* Жирный шрифт */
+    margin: 0 auto;
+    color: #17674b;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.HeaderTitle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 .NavIcon {
@@ -26,11 +39,11 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: #ffffff; /* Цвет иконки */
+    color: #ffffff;
 }
 
 .SidebarNav {
-    background: #25272a; /* Уникальный цвет фона бокового меню */
+    background: linear-gradient(to bottom, #4cb8c4, #3cd3ad);
     width: 250px;
     height: 100vh;
     display: flex;
@@ -40,8 +53,10 @@
     left: -100%;
     transition: left 350ms ease-in-out;
     z-index: 10;
-    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); /* Тень для объема */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
 }
+
 
 .SidebarNav.open {
     left: 0;
@@ -51,10 +66,11 @@
     width: 100%;
 }
 
-/* Media Query для экранов шириной менее 600px (мобильные телефоны) */
+
 @media only screen and (max-width: 600px) {
     .HeaderTitle {
-        margin-left: 50px;
+       display: none;
+
     }
 
     .SidebarNav {
@@ -62,10 +78,11 @@
     }
 }
 
-/* Media Query для экранов шириной от 601px до 1024px (планшеты) */
+
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     .HeaderTitle {
-        margin-left: 0;
+        font-size: 20px;
+        text-align: center;
     }
 
     .SidebarNav {
@@ -73,18 +90,18 @@
     }
 }
 
-/* Sidebar.css */
+
 
 .NavIcon {
-    transition: transform 0.2s ease; /* Добавляем плавность анимации для свойства transform */
+    transition: transform 0.2s ease;
 }
 
 .NavIcon:hover {
-    transform: scale(1.2); /* Увеличиваем размер иконы при наведении */
+    transform: scale(1.2);
 }
 
 
 
 .NavIcon.rotate {
-    transform: none; /* Вращаем иконку на 360 градусов */
+    transform: none;
 }

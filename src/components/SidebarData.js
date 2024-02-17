@@ -18,6 +18,11 @@ export const SidebarData = [
 
     },
     {
+        title: "Contact",
+        path: "/contact",
+        icon: <FaIcons.FaPhone />,
+    },
+    {
         title: "Applcations",
         path: "/services",
         icon: <IoIcons.IoIosPaper />,
@@ -95,11 +100,7 @@ export const SidebarData = [
         ],
 
     },*/
-    {
-        title: "Contact",
-        path: "/contact",
-        icon: <FaIcons.FaPhone />,
-    },
+
 
 
 ];
