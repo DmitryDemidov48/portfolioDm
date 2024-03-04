@@ -1,8 +1,7 @@
-/* EmailForm.css */
 
 .email-form {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 30px auto 0;
     padding: 20px;
     background-color: #f8f9fa;
     border: 1px solid #dee2e6;
@@ -53,29 +52,29 @@ input[type="submit"]:hover {
     margin-bottom: 20px;
 }
 
-/* Добавляем стили для ссылок */
+
 .social-links {
     display: flex;
     justify-content: center;
-    margin-top: 25px; /* Увеличиваем отступ сверху */
+    margin-top: 25px;
 }
 
 .social-links a {
     text-decoration: none;
-    color: black; /* Черный цвет текста */
+    color: black;
     font-size: 16px;
-    margin: 0 10px; /* Увеличиваем отступы */
-    transition: transform 0.2s ease; /* Анимация при наведении */
+    margin: 0 10px;
+    transition: transform 0.2s ease;
     display: flex;
-    align-items: center; /* Выравниваем по вертикали */
+    align-items: center;
 }
 
 .social-links a svg {
-    width: 24px; /* Задаем одинаковую ширину для иконок */
-    height: 24px; /* Задаем одинаковую высоту для иконок */
+    width: 24px;
+    height: 24px;
 }
 
 .social-links a:hover {
     text-decoration: underline;
-    transform: scale(1.1); /* Увеличиваем размер при наведении */
+    transform: scale(1.1);
 }

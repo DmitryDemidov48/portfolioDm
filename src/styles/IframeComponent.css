@@ -1,10 +1,15 @@
 
 .map {
+    top: 40px;
     width: 1280px;
     height: 780px;
     border: none;
 }
-.video-frame {
+
+.video-frame,
+.calc-frame,
+.todo-frame,
+.weather-frame {
     position: relative;
     overflow: hidden;
     border: 5px solid #000;
@@ -18,12 +23,62 @@
     height: 100%;
 }
 
-.iframe {
+.iframe,
+.iframe-calc,
+.iframe_todo,
+.iframe-weather {
     width: 1024px;
     height: 640px;
     border: none;
 }
 
 
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        height: auto;
+        position: relative;
+    }
+
+    .map,
+    .calc-frame,
+    .todo-frame,
+    .weather-frame {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .calc-frame {
+        height: 65vh;
+    }
+
+    .iframe-calc,
+    .iframe_todo,
+    .iframe-weather {
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .todo-frame {
+        height: 100vh;
+    }
+
+    .submenu-container {
+        display: none;
+    }
+
+    .container-services {
+        text-align: center;
+    }
+}
 
 
+@media screen and (max-width: 1024px) {
+    .submenu-container {
+
+    }
+}

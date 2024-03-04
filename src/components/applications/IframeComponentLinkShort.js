@@ -1,13 +1,13 @@
 import React from 'react';
 import '../../styles/IframeComponent.css';
-const IframeComponentCalcul = () => {
+ const IframeComponentLinkShort = () => {
     return (
-        <div className="calc-frame">
+        <div className="weather-frame">
             <div className="slider-container">
                 <div className="slide">
                     <iframe
-                        className="iframe-calc"
-                        src="https://dmitrydemidov48.github.io/calculator_js/"
+                        className="iframe-weather"
+                        src="https://dmitrydemidov48.github.io/linkshort/"
                         title="Multiroom App"
                     ></iframe>
                 </div>
@@ -15,5 +15,4 @@ const IframeComponentCalcul = () => {
         </div>
     );
 };
-
-export default IframeComponentCalcul;
+ export default IframeComponentLinkShort

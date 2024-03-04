@@ -1,10 +1,11 @@
 import "./App.css";
 import Sidebar from "./components/Sidebar";
-import {BrowserRouter as Router, Routes, Route,} from "react-router-dom";
-import AboutUs from "./pages/AboutUs";
-import { Calcul, ToDo, Weather,} from "./pages/Application";
-import {Cave,Multiroom, Space, Tower} from "./pages/Game";
+import {BrowserRouter as Router, Routes, Route, } from "react-router-dom";
+import AboutMe from "./pages/AboutMe";
+import {Application, Calcul, LinkShort, SecretRecording, Table, ToDo, Weather,} from "./pages/Application";
+import {Cave, Game, Multiroom, Space, Tower} from "./pages/Game";
 import Contact from "./pages/Contact";
+
 
 
 
@@ -16,22 +17,25 @@ function App() {
         <Router>
             <Sidebar/>
             <Routes>
-                <Route path="/about-us"
-                    element={<AboutUs/>}/>
-                <Route path="/services/services1"
+
+                <Route path="/portfoliodm"
+                    element={<AboutMe/>}/>
+                <Route path="/contact"
+                       element={<Contact/>}/>
+                <Route path="/services"
+                       element={<Application/>}/>
+                <Route path="/services1"
                     element={<Calcul/>}/>
-                <Route path="/services/services2"
+                <Route path="/services2"
                     element={<ToDo/>}/>
-                <Route path="/services/services3"
+                <Route path="/services6"
+                       element={<Table/>}/>
+                <Route path="/services3"
                     element={<Weather/>}/>
-                <Route path="/game/space"
-                       element={<Space/>}/>
-                <Route path="/game/Multiroom"
-                       element={<Multiroom/>}/>
-                <Route path="/game/Tower"
-                       element={<Tower/>}/>
-                <Route path="/game/Cave"
-                       element={<Cave/>}/>
+                <Route path="/services4"
+                       element={<LinkShort/>}/>
+                <Route path="/services5"
+                       element={<SecretRecording/>}/>
                 <Route path="/contact"
                     element={<Contact/>}/>
             </Routes>
